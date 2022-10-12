@@ -1,0 +1,68 @@
+.hero {
+    height:100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url("../images/constructBg.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: #fff;
+
+    div.hero__intro {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+
+    div.hero__nav {
+        position: absolute;
+        height: 100vh;
+        display: flex;
+        top: 0;
+        justify-content: center;
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        
+        a {
+            width:3rem;
+            height:3rem;
+            padding: 8px;
+            background-color: gray;
+            margin-bottom: 1rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        a.contact-cta {
+            display: flex;
+            align-items: center;
+            width:13rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8rem;
+            background-color: orangered;
+
+            p {
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}

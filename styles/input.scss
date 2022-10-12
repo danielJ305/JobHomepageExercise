@@ -1,0 +1,22 @@
+@use "hero";
+@use "social-proof";
+@use "featured-projects";
+@use "about-section";
+@use "footer";
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: auto;
+}
