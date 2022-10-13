@@ -4,28 +4,83 @@
     background-repeat:no-repeat;
     background-size: cover;
     background-color: #fff;
+    padding:12rem 0 12rem 0;
+    z-index: 10;
+
+    .owner-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: auto;
+        height:800px
+    }
 
     .wrapper {
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 10;
     }
 
     &__title {
-
+        display: flex;
+        margin-left: auto;
+        
+        h2 {
+            border-right: solid 1px white;
+            font-family: depot-new-web, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: 5rem;
+            color: #CC4C33;
+            padding-right: 3rem;
+        }
+        p {
+            max-width: 800px;
+            padding-left: 3rem;
+            color: #fff;
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+        h2, p {
+            margin: 0;
+        }
     }
 
     &__services {
+        margin-left: auto;
+        margin-bottom: 4rem;
+
+        h4 {
+            margin: 5rem 5rem 1rem 0;
+            font-family: depot-new-web, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-transform: uppercase;
+            color: #CC4C33;
+        }
 
         div {
             display: flex;
-            
+
             ul {
 
                 li {
+                    list-style-type: none;
+                    margin-bottom: 1rem;
 
                     img {
                         width: 20px;
                         height: auto;
+                        margin-right: 0.5rem;
+                        margin-bottom: -0.2rem;
+                    }
+
+                    span {
+                        font-size: 2rem;
+                        color: #fff;
                     }
                 }
             }
@@ -33,6 +88,74 @@
     }
 
     &__footnote {
+            margin-left: auto;
+            display: flex;
 
+           div:first-child {
+                text-align: right;
+                border-right: solid 1px white;
+                padding-right: 3rem;
+
+                h5 {
+                    font-family: depot-new-web, sans-serif;
+                    font-weight: 400;
+                    font-style: normal; 
+                    color: #fff;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+
+                p {
+                    font-family: depot-new-web, sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #CC4C33;
+                    font-size: 5rem;
+                    margin: 0;
+                }
+
+           }
+
+           div:last-child {
+                max-width: 800px;
+                padding-left: 3rem;
+
+                h4 {
+                    margin: 0;
+                    font-family: depot-new-web, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    color: #CC4C33;
+                }
+
+                div {
+                    padding: 0;
+
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        padding: 0;
+                        
+                        li {
+                            list-style-type: none;
+                            font-size: 2rem;
+                            text-align: left;
+                            color: #fff;
+                            margin-right: 5rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                }
+           }
     }
+}
+
+/* -- Page Break -- */
+
+.page-break {
+    width: 100vw;
+    position: relative;
+    z-index: 10;
 }

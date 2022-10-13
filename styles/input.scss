@@ -19,7 +19,7 @@ body {
 .wrapper {
     max-width: 1300px;
     margin: auto;
-    padding:0 2rem 0 2rem;
+    padding:0 2.5rem 0 2.5rem;
 }
 
 /* Global Font Sizes */
@@ -29,7 +29,7 @@ h3 { font-size: 3.5rem; }
 h4 { font-size: 3rem; }
 h5 { font-size: 2.5rem; }
 
-a, p, span {
+a, p, span, li, label {
     font-family: depot-new-web, sans-serif;
     font-weight: 400;
     font-style: normal;

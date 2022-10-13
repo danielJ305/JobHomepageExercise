@@ -58,6 +58,10 @@
   color: white;
   margin-top: 10px;
 }
+.hero__intro button:hover {
+  cursor: pointer;
+  background-color: #10283a;
+}
 .hero div.hero__nav {
   position: absolute;
   height: 100vh;
@@ -285,18 +289,239 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
+  padding: 12rem 0 12rem 0;
+  z-index: 10;
+}
+.about .owner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: auto;
+  height: 800px;
 }
 .about .wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+.about__title {
+  display: flex;
+  margin-left: auto;
+}
+.about__title h2 {
+  border-right: solid 1px white;
+  font-family: depot-new-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #CC4C33;
+  padding-right: 3rem;
+}
+.about__title p {
+  max-width: 800px;
+  padding-left: 3rem;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.about__title h2, .about__title p {
+  margin: 0;
+}
+.about__services {
+  margin-left: auto;
+  margin-bottom: 4rem;
+}
+.about__services h4 {
+  margin: 5rem 5rem 1rem 0;
+  font-family: depot-new-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #CC4C33;
 }
 .about__services div {
   display: flex;
 }
+.about__services div ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
 .about__services div ul li img {
   width: 20px;
   height: auto;
+  margin-right: 0.5rem;
+  margin-bottom: -0.2rem;
 }
+.about__services div ul li span {
+  font-size: 2rem;
+  color: #fff;
+}
+.about__footnote {
+  margin-left: auto;
+  display: flex;
+}
+.about__footnote div:first-child {
+  text-align: right;
+  border-right: solid 1px white;
+  padding-right: 3rem;
+}
+.about__footnote div:first-child h5 {
+  font-family: depot-new-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+.about__footnote div:first-child p {
+  font-family: depot-new-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #CC4C33;
+  font-size: 5rem;
+  margin: 0;
+}
+.about__footnote div:last-child {
+  max-width: 800px;
+  padding-left: 3rem;
+}
+.about__footnote div:last-child h4 {
+  margin: 0;
+  font-family: depot-new-web, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #CC4C33;
+}
+.about__footnote div:last-child div {
+  padding: 0;
+}
+.about__footnote div:last-child div ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.about__footnote div:last-child div ul li {
+  list-style-type: none;
+  font-size: 2rem;
+  text-align: left;
+  color: #fff;
+  margin-right: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* -- Page Break -- */
+.page-break {
+  width: 100vw;
+  position: relative;
+  z-index: 10;
+}
+
+footer {
+  position: relative;
+  background-image: url("../images/mapBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  padding: 16rem 0 12rem 0;
+  margin-top: -100px;
+}
+footer .wrapper {
+  display: flex;
+}
+footer .wrapper .contact-us-container h3 {
+  font-family: depot-new-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 5rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+footer .wrapper .contact-us-container form {
+  min-width: 310px;
+}
+footer .wrapper .contact-us-container form div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+footer .wrapper .contact-us-container form div input {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+footer .wrapper .contact-us-container form div input, footer .wrapper .contact-us-container form div textarea {
+  max-width: 220px;
+  width: 100%;
+}
+footer .wrapper .contact-us-container form div label {
+  font-size: 1.8rem;
+  color: #fff;
+  width: 70px;
+  display: block;
+  text-align: right;
+  margin-right: 1rem;
+}
+footer .wrapper .contact-us-container form div textarea {
+  min-height: 100px;
+}
+footer .wrapper .contact-us-container form div:last-child button {
+  width: 10rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 1rem 0 1rem 0;
+  border: solid white 1.5px;
+  background-color: #CC4C33;
+  color: white;
+  margin-top: 10px;
+}
+footer .wrapper .contact-us-container form div:last-child button:hover {
+  cursor: pointer;
+  background-color: #a02e17;
+}
+footer .wrapper .contact-us-location {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+footer .wrapper .contact-us-location div {
+  text-align: center;
+}
+footer .wrapper .contact-us-location h5 {
+  font-family: depot-new-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+footer .wrapper .contact-us-location span {
+  font-size: 5rem;
+  color: #fff;
+}
+footer .wrapper .contact-us-location img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+}
+
+.footer-bottom {
+  background-color: #0F1418;
+  padding: 2rem;
+}
+.footer-bottom p {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+}
+
 html {
   font-size: 62.5%;
   height: 100%;
@@ -312,7 +537,7 @@ body {
 .wrapper {
   max-width: 1300px;
   margin: auto;
-  padding: 0 2rem 0 2rem;
+  padding: 0 2.5rem 0 2.5rem;
 }
 
 /* Global Font Sizes */
@@ -336,7 +561,7 @@ h5 {
   font-size: 2.5rem;
 }
 
-a, p, span {
+a, p, span, li, label {
   font-family: depot-new-web, sans-serif;
   font-weight: 400;
   font-style: normal;
