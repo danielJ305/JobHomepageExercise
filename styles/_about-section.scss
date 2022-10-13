@@ -1,0 +1,38 @@
+.about {
+    position: relative;
+    background-image: url("../images/grittyBg.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: #fff;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+
+    }
+
+    &__services {
+
+        div {
+            display: flex;
+            
+            ul {
+
+                li {
+
+                    img {
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &__footnote {
+
+    }
+}

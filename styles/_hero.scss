@@ -22,6 +22,43 @@
             width: 20rem;
             height: 20rem;
         }
+
+        h2 {
+            margin: 0;
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-family: depot-new-web,sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: #fff;
+        }
+        h1 {
+            margin: 0 0 8rem 0;
+            font-size: 3.2rem;
+            text-transform: uppercase;
+            font-family: depot-new-web,sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            color: #fff;
+        }
+        p {
+            font-size: 6rem;
+            font-family: depot-new-web,sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: #CC4C33;
+            margin: 0;
+        }
+        button {
+            width:23rem;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            padding: 1rem 0 1rem 0;
+            border: solid white 1.5px;
+            background-color: #243644;
+            color: white;
+            margin-top: 10px;
+        }
     }
 
     div.hero__nav {
@@ -39,7 +76,7 @@
             width:3rem;
             height:3rem;
             padding: 8px;
-            background-color: gray;
+            background-color: #5F666C;
             margin-bottom: 1rem;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 
@@ -57,12 +94,32 @@
             text-decoration: none;
             color: #fff;
             font-size: 1.8rem;
-            background-color: orangered;
+            background-color: #AF3315;
 
             p {
                 margin-right: 10px;
             }
         }
+
+        a.facebook {
+            background-color: #547CB9;
+        }
+        a.twitter {
+            background-color: #64CBF4;
+        }
+        a.google {
+            background-color: #E04203;
+        }
+
+    }
+
+    img.red-triangle {
+        position: absolute;
+        width:8rem;
+        height:auto;
+        top:0;
+        left: 50%;
+        margin-left:-4rem;
     }
     
 }

@@ -1,6 +1,148 @@
 .featured-projects {
+    position: relative;
+    background-color:#243644;
+    padding:12rem 0 12rem 0;
+
+    img.big-star {
+        position: absolute;
+        top:0;
+        left: 50%;
+        width:1000px;
+        height: auto;
+        margin-left: -500px;
+    }
+
+    .wrapper {
+        position: relative;
+        z-index: 10;
+    }
 
     &__title {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        margin-bottom: 5rem;
+
+        h3 {
+            padding-right: 3rem;
+            border-right: solid 1px white !important;
+            height: 110px;
+            margin: 0;
+            text-transform: uppercase;
+            font-family: depot-new-web,sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: #CC4C33;
+            font-size: 5rem;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            padding-left: 3rem;
+
+            div:last-child {
+                display: flex;
+            }
+
+            h5, h4, h2 {
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            h4 {
+                font-family: depot-new-web, sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+
+            h2 {
+                font-family: depot-new-web, sans-serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            h5 {
+                font-family: depot-new-web, sans-serif;
+                font-weight: 100;
+                font-style: normal;
+                font-size: 1.8rem;
+                margin-right: 2rem;
+            }
+        }
+
+    }
+
+    &__img-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5rem;
+
+        .featured-img-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .featured-overlay {
+                position: absolute;
+                bottom:0;
+                top:0;
+                color: white;
+                background:#B13416;
+                width:300px;
+                height:300px;
+                opacity:0;
+                visibility:hidden;
+                -webkit-transition: visibility 0s, opacity 0.5s linear; 
+                transition: visibility 0s, opacity 0.5s linear;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h5, p, a {
+                    text-align: center;
+                }
+
+                h5 {
+                    text-transform: uppercase;
+                    font-family: depot-new-web,sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #fff;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    padding: 0 1.5rem;
+                    text-align: justify;
+                }
+
+                a {
+                    text-decoration: underline;
+                    margin-top: 20px;
+                    font-size: 2rem;
+                    color: white;
+                }
+            }
+        }
+
+        .featured-img-container:hover {
+            cursor: pointer;
+        }
+
+        .featured-img-container:hover .featured-overlay {
+            visibility: visible !important;
+            opacity: 0.7 !important;
+        }
         
     }
 }
