@@ -9,10 +9,11 @@
     <!-- Adobe Font "Depot New"-->
     <link rel="stylesheet" href="https://use.typekit.net/obj0ifu.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>JD James Construction</title>
 </head>
 <body>
-    <section class="hero">
+    <section id="home" class="hero">
         <img class="red-triangle" src="./images/redTriangle.svg" alt="red triangle">
         <div class="hero__intro">
             <div class="wrapper">
@@ -24,14 +25,17 @@
             </div>
         </div>
         <div class="hero__nav">
-            <a href="#" rel="noopener noreferrer"><img src="./images/houseIcon.svg" alt="home"></a>
-            <a href="#" rel="noopener noreferrer"><img src="./images/starIcon.svg" alt="home"></a>
-            <a href="#" rel="noopener noreferrer"><img src="./images/infoI.svg" alt="home"></a>
-            <a class="contact-cta" href="#" rel="noopener noreferrer"><p>contact</p><img src="./images/mailIcon.svg" alt="home"></a>
-            <a class="facebook" href="#" rel="noopener noreferrer"><img src="./images/facebookF.svg" alt="home"></a>
-            <a class="twitter" href="#" rel="noopener noreferrer"><img src="./images/twitterLogo.svg" alt="home"></a>
-            <a class="google" href="#" rel="noopener noreferrer"><img src="./images/googlePlus.svg" alt="home"></a>
+            <a class="nav-icon" href="#home" rel="noopener noreferrer"><img src="./images/houseIcon.svg" alt="home"></a>
+            <a class="nav-icon" href="#featured" rel="noopener noreferrer"><img src="./images/starIcon.svg" alt="home"></a>
+            <a class="nav-icon" href="#about" rel="noopener noreferrer"><img src="./images/infoI.svg" alt="home"></a>
+            <a class="contact-cta nav-icon" href="#contact" rel="noopener noreferrer"><p>contact</p><img src="./images/mailIcon.svg" alt="home"></a>
+            <a class="facebook nav-icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="./images/facebookF.svg" alt="home"></a>
+            <a class="twitter nav-icon" href="https://twitter.com/home" target="_blank" rel="noopener noreferrer"><img src="./images/twitterLogo.svg" alt="home"></a>
+            <a class="google nav-icon" href="https://about.google/?fg=1" target="_blank" rel="noopener noreferrer"><img src="./images/googlePlus.svg" alt="home"></a>
         </div>
+        <a class="mobile-nav-toggle" class="icon">
+            <i class="fa fa-bars"></i>
+          </a>
     </section>
     <section class="social-proof">
         <div class="wrapper">
@@ -40,7 +44,7 @@
             <p>- JD JAMES</p>
         </div>
     </section>
-    <section class="featured-projects">
+    <section id="featured" class="featured-projects">
         <img class="big-star" src="./images/bigStar.png" alt="star">
         <div class="wrapper">
             <div class="featured-projects__title">
@@ -124,7 +128,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <img class="owner-img" src="./images/owner.png" alt="owner">
         <div class="wrapper">
             <div class="about__title">
@@ -213,7 +217,7 @@
         </div>
     </section>
     <img class="page-break" src="./images/roughEdge.png">
-    <footer>
+    <footer id="contact">
         <div class="wrapper">
             <div class="contact-us-container">
                 <h3>Contact Us</h3>
@@ -256,5 +260,7 @@
     <div class="footer-bottom">
         <p>J.D. James Construction. 2014. All Rights Reserved. Custom website designed by MilesTechnologies.com Sitemap.</p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ footer {
         display: flex;
     
         .contact-us-container {
-
+            margin: auto;
             h3 {
                 font-family: depot-new-web, sans-serif;
                 font-weight: 700;
@@ -25,10 +25,11 @@ footer {
 
             form {
                 min-width: 310px;
+                max-width: 360px;
                 
                 div {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     margin-bottom: 1.5rem;
 
                     input {
@@ -63,6 +64,7 @@ footer {
                         background-color: #CC4C33;
                         color: white;
                         margin-top: 10px;
+                        margin-left: 80px;
                     }
 
                     button:hover {
@@ -122,6 +124,23 @@ footer {
     footer {
         .wrapper {
             flex-direction: column;
+
+            .contact-us-container {
+                margin-bottom: 5rem;
+
+                form {
+                    button{
+                        margin: 0 !important;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .footer-bottom {
+        p {
+            font-size: 1.2rem;
         }
     }
 }
