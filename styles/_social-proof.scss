@@ -41,3 +41,19 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .social-proof {
+        .wrapper {
+            h3 {
+                font-size: 3rem;
+            }
+            h4 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 2.3rem;
+            }
+        }
+    }
+  }

@@ -6,6 +6,8 @@
     background-repeat:no-repeat;
     background-size: cover;
     background-color: #fff;
+    overflow: hidden;
+
 
     div.hero__intro {
         height: 100vh;
@@ -126,4 +128,20 @@
         margin-left:-4rem;
     }
     
+}
+
+@media screen and (max-width: 480px) {
+ .hero {
+    &__intro {
+        h2 {
+            font-size: 4.2rem;
+        }
+        h1 {
+            font-size: 2.6rem;
+        }
+        p {
+            font-size: 5rem;
+        }
+    }
+ } 
 }

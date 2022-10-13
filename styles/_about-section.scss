@@ -91,7 +91,7 @@
             margin-left: auto;
             display: flex;
 
-           div:first-child {
+           > div:first-child {
                 text-align: right;
                 border-right: solid 1px white;
                 padding-right: 3rem;
@@ -116,7 +116,7 @@
 
            }
 
-           div:last-child {
+           > div:last-child {
                 max-width: 800px;
                 padding-left: 3rem;
 
@@ -159,3 +159,42 @@
     position: relative;
     z-index: 10;
 }
+
+@media screen and (max-width: 768px) {
+    .about {
+        img {
+            display: none;
+        }
+
+        &__title {
+            flex-direction: column;
+
+            h2 {
+                border: none;
+                padding: 0;
+
+            }
+            p {
+                padding: 0;
+            }
+        }
+
+        &__services {
+            margin: 0;
+        }
+
+        &__footnote {
+            flex-direction: column;
+
+            > div:first-child {
+                text-align: left;
+                border: none;
+                margin: 3rem 0 3rem 0;
+            }
+
+            > div:last-child {
+                padding:  0;
+            }
+        }
+    }
+  }
